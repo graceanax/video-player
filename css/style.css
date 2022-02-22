@@ -1,12 +1,16 @@
 @import "./css/buttons.css";
 
 body {
-  background-color:aquamarine;
+  background-color: #26B4BC;
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 }
 .wrapper {
   max-inline-size: 900px;
+  min-height: 100vh;
   margin: auto;
+  display: flex;
+  align-items: center;
 }
 .player {
   position: relative;
