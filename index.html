@@ -8,11 +8,10 @@
   <title>Document</title>
 </head>
 <body>
-  <button class="button" id="backward"></button>
-  <button class="button" id="forward"></button>
-  <button class="button" id="play"></button>
-  <button class="button" hidden id="pause"></button>
-  <button class="button" id="id">Avanzar 10 segundos</button>
+  <button class="button" id="backward" aria-label="Retroceder 10 segundos"></button>
+  <button class="button" id="forward" aria-label="Avanzar 10 segundos"></button>
+  <button class="button" id="play" aria-label="Reproducir"></button>
+  <button class="button" hidden id="pause" aria-label="Pausar"></button>
   <video id="video" poster="./assets/images/poster.jpg" controls muted src="./assets/videos/lofi.mp4"></video>
 <script>
   const $video = document.querySelector('#video');
