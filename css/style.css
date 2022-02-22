@@ -2,11 +2,41 @@
 
 body {
   background-color:aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .wrapper {
   max-inline-size: 900px;
   margin: auto;
 }
+.player {
+  position: relative;
+}
 .player video {
   inline-size: 100%;
+  aspect-ratio: 16/9;
+  vertical-align: middle;
+}
+.player-title {
+  color: #fff;
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 20px;
+}
+.player-actions {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.player-progress {
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline: 0;
+  display: flex;
+  padding: 10px;
+}
+.player-progress input {
+  flex: 1;
 }
