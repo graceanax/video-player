@@ -10,17 +10,19 @@
 <body>
   <div class="wrapper">
     <div class="player">
-      <h2 class="player-title">Música para programadores</h2>
-      <div class="player-actions">
-        <button class="button" id="backward" aria-label="Retroceder 10 segundos" title="Retroceder 10 segundos"></button>
-        <button class="button" id="forward" aria-label="Avanzar 10 segundos" title="Avanzar 10 segundos"></button>
-        <button class="button" id="play" aria-label="Reproducir" title="Reproducir"></button>
-        <button class="button" hidden id="pause" aria-label="Pausar" title="Pausar"></button>
+      <div class="player-overlay">
+        <h2 class="player-title">Música para programadores</h2>
+        <div class="player-actions">
+          <button class="button" id="backward" aria-label="Retroceder 10 segundos" title="Retroceder 10 segundos"></button>
+          <button class="button" id="forward" aria-label="Avanzar 10 segundos" title="Avanzar 10 segundos"></button>
+          <button class="button" id="play" aria-label="Reproducir" title="Reproducir"></button>
+          <button class="button" hidden id="pause" aria-label="Pausar" title="Pausar"></button>
+        </div>
+        <div class="player-progress">
+          <input id="progress" type="range" min="0" value="0" step="1">
+        </div>
       </div>
       <video id="video" poster="./assets/images/poster.jpg" muted src="./assets/videos/lofi.mp4"></video>
-      <div class="player-progress">
-        <input id="progress" type="range" min="0" value="0" step="1">
-      </div>
     </div>
   </div>
   <script src="./js/script.js"></script>

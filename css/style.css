@@ -11,11 +11,21 @@ body {
 .player {
   position: relative;
 }
+
 .player video {
   inline-size: 100%;
   aspect-ratio: 16/9;
   vertical-align: middle;
   object-fit: cover;
+}
+.player-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: .3s opacity;
+}
+.player:hover .player-overlay {
+  opacity: 1;
 }
 .player-title {
   color: #fff;
